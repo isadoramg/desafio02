@@ -1,0 +1,401 @@
+*{
+    margin:0;padding:0;scroll-behavior: smooth;box-sizing: border-box;overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar{
+    overflow: visible;
+    background-color: #000000aa;
+    padding: 0 5%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+#navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 36px 36px 32px 36px;
+    text-decoration: none;
+    font-size: 17px;
+    opacity: .5;
+    transition: .3s;
+}
+#navbar a:hover{
+    opacity: 1;
+    transition: .3s;
+}
+#navbar a:first-of-type{
+    /*padding: calc(42px-2em) 16px;*/
+    padding: 24px 36px;
+    opacity: 1;
+    float:left;
+    font-size: 2em;
+}
+section{
+    height: 100vh;
+    width: 100vw;
+}
+#section1{
+    background-image:url('https://static.wixstatic.com/media/a9ff3b_fd0d41b6daed4be3ab2bbe001e726784.jpg/v1/fill/w_1351,h_683,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a9ff3b_fd0d41b6daed4be3ab2bbe001e726784.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#section1:before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .5;
+    z-index: 0;
+}
+#section1 *{
+    z-index: 1;
+}
+#navbar ul{
+    padding: 16px 15px;
+    position: absolute;
+    background-color: #000000aa;
+}
+#navbar ul li{
+    padding: 8px 16px;
+
+}
+.hidden{
+    display: none;
+}
+#dropdown:hover ul{
+    display: block;
+}
+.header-title{
+    position: absolute;
+    top: 30%;
+    left: 12.5%;
+    font-size: 5em;
+    width: 75%;
+    text-align: center;
+    color:white;
+    z-index: 5;
+}
+.socials{
+    position: fixed;
+    right:0;
+    left:auto;
+    top: 35%;
+    background-color: #000000aa;
+    border-radius: 10px 0 0 10px;
+    padding: 2.5%;
+}
+.socials ul li{
+    padding: 2.5%;
+    color: white;
+    font-size: 2em;
+}
+.fa-chevron-down{
+    font-size: 3em;
+    position: absolute;
+    left: 50%;
+    color: white;
+    bottom: 5%;
+}
+#section2{
+    display: flex;
+    flex-direction: row;
+}
+.sec2-left{
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+}
+.sec2-left h1{
+    /*position: absolute;*/
+    margin-top: 40%;
+    font-size: 3em;
+    width: 75%;
+    padding-left: 15%;
+    text-align: center;
+    color:white;
+}
+.sec2-left h1 small{
+    font-size: .5em;
+}
+.sec2-right{
+    background-image: url('https://static.wixstatic.com/media/cb53a86a819b45df845c9af9cff35093.jpg/v1/fill/w_676,h_683,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/cb53a86a819b45df845c9af9cff35093.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+}
+#section3{
+    display: flex;
+    flex-direction: row;
+    height: 75vh;
+}
+
+
+.card1{
+    background-image: url('https://static.wixstatic.com/media/8a3e6d_9c5bae65c9d24c2c899f34e0b1f734e5~mv2.png/v1/fit/w_327,h_326,q_90/8a3e6d_9c5bae65c9d24c2c899f34e0b1f734e5~mv2.webp 1x, https://static.wixstatic.com/media/8a3e6d_9c5bae65c9d24c2c899f34e0b1f734e5~mv2.png/v1/fit/w_654,h_652,q_90/8a3e6d_9c5bae65c9d24c2c899f34e0b1f734e5~mv2.webp 2x, https://static.wixstatic.com/media/8a3e6d_9c5bae65c9d24c2c899f34e0b1f734e5~mv2.png/v1/fit/w_960,h_957,q_90/8a3e6d_9c5bae65c9d24c2c899f34e0b1f734e5~mv2.webp 3x, https://static.wixstatic.com/media/8a3e6d_9c5bae65c9d24c2c899f34e0b1f734e5~mv2.png/v1/fit/w_960,h_957,q_90/8a3e6d_9c5bae65c9d24c2c899f34e0b1f734e5~mv2.webp 4x, https://static.wixstatic.com/media/8a3e6d_9c5bae65c9d24c2c899f34e0b1f734e5~mv2.png/v1/fit/w_960,h_957,q_90/8a3e6d_9c5bae65c9d24c2c899f34e0b1f734e5~mv2.webp 5x');
+    flex-basis: calc(100%/3);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card1:hover:before{
+    position: absolute;
+    width: calc(100vw/3);
+    height: 40vh;
+    content: 'Mochilas';
+    margin-top: 0;
+    margin-left: 0;
+    background-color: #000000aa;
+    padding-top: 35vh;
+    text-align: center;
+    z-index: 5;
+    font-size: 2em;
+    color: white;
+}
+.card2{
+    background-image: url('https://static.wixstatic.com/media/8a3e6d_b1ad0c9948f248a3a47481472e2537e1~mv2.png/v1/fill/w_327,h_326,q_90/8a3e6d_b1ad0c9948f248a3a47481472e2537e1~mv2.webp 1x, https://static.wixstatic.com/media/8a3e6d_b1ad0c9948f248a3a47481472e2537e1~mv2.png/v1/fill/w_654,h_652,q_90/8a3e6d_b1ad0c9948f248a3a47481472e2537e1~mv2.webp 2x, https://static.wixstatic.com/media/8a3e6d_b1ad0c9948f248a3a47481472e2537e1~mv2.png/v1/fill/w_960,h_957,q_90/8a3e6d_b1ad0c9948f248a3a47481472e2537e1~mv2.webp 3x, https://static.wixstatic.com/media/8a3e6d_b1ad0c9948f248a3a47481472e2537e1~mv2.png/v1/fill/w_960,h_957,q_90/8a3e6d_b1ad0c9948f248a3a47481472e2537e1~mv2.webp 4x, https://static.wixstatic.com/media/8a3e6d_b1ad0c9948f248a3a47481472e2537e1~mv2.png/v1/fill/w_960,h_957,q_90/8a3e6d_b1ad0c9948f248a3a47481472e2537e1~mv2.webp 5x');
+    flex-basis: calc(100%/3);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card2:hover:before{
+    position: absolute;
+    width: calc(100vw/3);
+    height: 40vh;
+    content: 'Mochilas de Carga';
+    margin-top: 0;
+    margin-left: 0;
+    background-color: #000000aa;
+    padding-top: 35vh;
+    text-align: center;
+    z-index: 5;
+    font-size: 2em;
+    color: white;
+}
+.card3{
+    background-image: url('https://static.wixstatic.com/media/8a3e6d_c2ca54da8fe74438ab000d79270cd4b9~mv2.png/v1/fill/w_326,h_326,q_90/8a3e6d_c2ca54da8fe74438ab000d79270cd4b9~mv2.webp 1x, https://static.wixstatic.com/media/8a3e6d_c2ca54da8fe74438ab000d79270cd4b9~mv2.png/v1/fill/w_652,h_652,q_90/8a3e6d_c2ca54da8fe74438ab000d79270cd4b9~mv2.webp 2x, https://static.wixstatic.com/media/8a3e6d_c2ca54da8fe74438ab000d79270cd4b9~mv2.png/v1/fill/w_958,h_958,q_90/8a3e6d_c2ca54da8fe74438ab000d79270cd4b9~mv2.webp 3x, https://static.wixstatic.com/media/8a3e6d_c2ca54da8fe74438ab000d79270cd4b9~mv2.png/v1/fill/w_958,h_958,q_90/8a3e6d_c2ca54da8fe74438ab000d79270cd4b9~mv2.webp 4x, https://static.wixstatic.com/media/8a3e6d_c2ca54da8fe74438ab000d79270cd4b9~mv2.png/v1/fill/w_958,h_958,q_90/8a3e6d_c2ca54da8fe74438ab000d79270cd4b9~mv2.webp 5x');
+    flex-basis: calc(100%/3);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card3:hover:before{
+    position: absolute;
+    width: calc(100vw/3);
+    height: 40vh;
+    content: 'Mochilas de Viagem';
+    margin-top: 0;
+    margin-left: 0;
+    background-color: #000000aa;
+    padding-top: 35vh;
+    text-align: center;
+    z-index: 5;
+    font-size: 2em;
+    color: white;
+}
+
+#section4{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+.mochilas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#section4 h1{
+    font-size: 3em;
+    letter-spacing: .5ch;
+}
+#section4 small{
+    font-size: .5em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    letter-spacing: .25ch;
+}
+#section4 p{
+    font-size: 1.5em;
+}
+#section4 small,#section4 span{
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+#section4 span{
+    text-decoration: line-through;
+    margin-right: 3ch;
+}
+.card-mochila{
+    transition: .3s;
+    height: 100px;
+    width: 100%;
+    color:white
+}
+.card-mochila::after{
+    transition:.3s;
+    position: absolute;
+    left:inherit;
+    transition: .3s;
+    content:'Ver';
+    font-size: 2em;
+    color: #00000088;
+    padding: 25px 0;
+    margin-top: -2.5%;
+    margin-left:-19.5%;
+    z-index: 1000;
+    background-color: #dadada;
+    max-height: 500px;
+    width: 22.5%;
+    opacity: 0;
+}
+.mochila:hover .card-mochila::after{
+    opacity: 1;
+}
+.mochila:hover .card-mochila{
+    color:transparent
+}
+
+#section5{
+    background-image: url('https://static.wixstatic.com/media/a9ff3b_1d1a03e206e948cf908a9f1274ee9df0.jpg/v1/fill/w_980,h_638,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a9ff3b_1d1a03e206e948cf908a9f1274ee9df0.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sec5-content{
+    height: 100%;
+    width: 50%;
+    background-color: #000000aa;
+    color:white;
+    padding-left:15%;
+}
+.sec5-text{
+    margin-top: 50%;
+    width: 80%;
+}
+.sec5-content h1{
+    font-size:3em;
+}
+
+#section6{
+    display: flex;
+    flex-direction: row;
+    height: 75vh;
+    background-color: #000;
+    color:white;
+}
+#section6 *{
+    overflow-y: hidden;
+}
+.sec6-form{
+    flex-basis: 50%;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    align-items: center;
+    justify-content: right;
+    padding: 8% 5% 10% 17.5%;
+}
+.sec6-form input{
+    width: 100%;
+    height: 3.5em;
+    border: 2px solid grey;
+    margin: 2.5px;
+    padding: 1em;
+}
+.sec6-form textarea{
+    width: 100%;
+    height: 6em;
+    border: 2px solid grey;
+    margin: 2.5px;
+    padding: 1em;
+}
+.sec6-form button{
+    padding: 12px 30px;
+    font-size: 1.25em;
+    background-color: #000;
+    border: 2px solid grey;
+    color: white
+}
+.sec6-text{
+    flex-basis: 50%;
+    width: 100%;
+    height: 100%;
+    padding: 7.5% 17.5% 10% 5%;
+}
+#section6 h1{
+    font-size: 3em;
+}
+
+#section7{
+    background-color: #141414;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+.sec7-title{
+    font-size: 2.5em;
+    line-height: 2ch;
+}
+.sec7-title small{
+    font-size:.5em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+.sec7-form{
+    width: 50%;
+    margin-top: 5%;
+}
+.sec7-form input{
+    width: 75%;
+    height: 3em;
+    border: 2px solid white;
+    margin: 2.5px;
+    padding: 1em;
+    background-color: transparent;
+}
+.sec7-form button{
+    /*padding: 12px 30px;
+    /font-size: 1.25em;*/
+    height: 3em;
+    margin:2.5px;
+    padding: 0 3em; 
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    float: right;
+}
+footer{
+    color: rgb(162,156,156);
+    background-color: #292828;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 -5px 25px rgba(0,0,0,.2);
+}
+footer p{
+    padding:12px;
+}
